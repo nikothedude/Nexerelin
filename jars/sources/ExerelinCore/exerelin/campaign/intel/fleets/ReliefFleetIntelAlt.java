@@ -365,10 +365,10 @@ public class ReliefFleetIntelAlt extends BaseIntelPlugin {
 				if 	(targetFactionId.equals(PlayerFactionStore.getPlayerFactionId())
 					||factionId.equals(PlayerFactionStore.getPlayerFactionId()))
 					{
-					Global.getSector().getIntelManager().queueIntel(this);
+					Global.getSector().getIntelManager().addIntel(this);
 					}
 
-				else Global.getSector().getIntelManager().addIntel(this);
+				else Global.getSector().getIntelManager().queueIntel(this);
 				break;
 
 			case 2:
