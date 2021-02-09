@@ -332,7 +332,7 @@ public class NexRaidIntel extends OffensiveFleetIntel {
 
 	@Override
 	protected void notifyEnding() {
-		sendOutcomeUpdate();
+//		sendOutcomeUpdate();
 		if (ExerelinModPlugin.isNexDev) {
 			Global.getSector().getCampaignUI().addMessage("notifyEnding() called in NexRaidIntel");
 		}
